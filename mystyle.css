@@ -1,0 +1,167 @@
+* {
+  text-align: center;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: black;
+  opacity: 0.8
+  z-index: 10;
+}
+
+.header-left {
+  float: left;
+  line-height: 60px;
+}
+
+.header-left a {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-right li {
+  float: left;
+  border-right: 1px solid white;
+  padding: 10px 20px 15px 20px;
+  display: inline-block;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.5s
+}
+
+.last-list {
+  margin-right: 20px
+}
+
+.header-right a {
+  color: white;
+  font-weight: bold;
+}
+
+.header-right li:hover {
+  opacity: 1;
+}
+
+.main {
+  background-image: url(futta2596.jpg);
+  background-size: cover;
+}
+
+.start {
+  padding-top: 100px
+}
+
+.start h1 {
+  color: white;
+  animation: size-larger 0.5s ease 0s;
+  animation-iteration-count: 4;
+  animation-direction: alternate;
+}
+
+.start a {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0px 7px #1a7940;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+}
+
+.start a:hover{
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+.start p {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.how-it-works {
+  margin-top: 500px;
+  padding-top: 100px;
+  height: 100px;
+}
+
+.how-it-works h1 {
+  font-weight: 800;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.how-it-works p {
+  display: none;
+}
+
+.how-it-works h1:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+#happy {
+  color: #5dca88;
+  display: none;
+}
+
+#logo {
+  margin-top: 300px;
+  width: 200px;
+  margin-bottom: 100px
+}
+
+#notfound {
+  animation-name: size-larger;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+
+@keyframes size-larger {
+  0% {
+    width: auto;
+    font-size: 32px;
+    color: white;
+  }
+
+  100% {
+    width: auto;
+    font-size: 50px;
+    color: pink;
+  }
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+}
+
+.footer-btn {
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 15px;
+  cursor: pointer;
+}

@@ -25,4 +25,13 @@ $(function(){
     }
   });
 
+  $('.material-scroll').click(function(){
+    var id = $(this).attr('href');
+    var position = $(id).offset().top;
+    $('.mdl-layout__content').animate({
+      'scrollTop': position
+    }, 'slow');
+    return false;
+  })
+
 });
